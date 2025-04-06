@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoBot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to EcoBot</h1>
+        <p>Your friendly assistant for recycling and environmental awareness</p>
+    </header>
+
+    <div class="Production">
+        <details>
+            <summary><strong>About the Developers</strong></summary>
+            <ul>
+                <li>Harsh Verma</li>
+                <li>Ankit Kumar</li>
+            </ul>
+        </details>
+    </div>
+    
+    <section class="chat-window">
+        <button class="close">x close</button>
+        <div class="chat">
+            <div class="model">
+                <p>Hi, how can I help you?</p>
+            </div>
+            
+        </div>
+        <div class="input-area">
+            <input placeholder="Ask me anything..." type="text">
+            <button>
+                <img src="send-icon.png" alt="send">
+            </button>
+        </div>
+    </section>
+
+    <div class="chat-button">
+        <img src="chat-icon.png" alt="start chat">
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+    
+    <script type="module" src="main.js"></script>
+    
+</body>
+</html>
