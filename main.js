@@ -22,7 +22,7 @@ Spreading awareness is key to encouraging collective action. People can share in
 
 `;
 
-const API_KEY = "AIzaSyDdimfb34eDU7np5yyvjIDTJHh5ktsBA6U";// Gemini API key..
+const API_KEY = "YOUR_API_KEY";// Gemini API key..
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ 
     model: "gemini-1.5-pro",
@@ -107,3 +107,4 @@ document.querySelector(".chat-window button.close")
 .addEventListener("click", ()=>{
     document.querySelector("body").classList.remove("chat-open");
 });
+
